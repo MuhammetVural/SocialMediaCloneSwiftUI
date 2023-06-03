@@ -12,38 +12,9 @@ struct ProfileView: View {
         VStack(alignment: .leading) {
             headerView
             actionButtons
+            userInfoDetails
             
-            VStack(alignment: .leading){
-                HStack {
-                    Text("Muhammet Vural")
-                        .font(.title2).bold()
-                    Image(systemName: "checkmark.seal.fill")
-                        .foregroundColor(Color(.systemBlue))
-                }
-                Text("@joker")
-                    .font(.subheadline)
-                    .foregroundColor(.gray)
-                Text("Your moms favorite villain")
-                    .font(.subheadline)
-                    .padding(.vertical)
-                HStack{
-                    HStack{
-                        Image(systemName: "mappin.and.ellipse")
-                        Text("Gotham, NY")
-                            
-                    }
-                    HStack{
-                        Image(systemName: "link")
-                        Text("linkedin.com.tr/muhammetvural")
-                            
-                        
-                    }
-                }
-                .font(.caption)
-                .foregroundColor(.gray)
-                
-                
-            }
+            
             
             
             Spacer()
@@ -98,5 +69,65 @@ extension ProfileView{
             }
         }.padding(.trailing)
         
+    }
+    
+    var userInfoDetails: some View {
+        VStack(alignment: .leading){
+            HStack {
+                Text("Muhammet Vural")
+                    .font(.title2).bold()
+                Image(systemName: "checkmark.seal.fill")
+                    .foregroundColor(Color(.systemBlue))
+            }
+            Text("@joker")
+                .font(.subheadline)
+                .foregroundColor(.gray)
+            Text("Your moms favorite villain")
+                .font(.subheadline)
+                .padding(.vertical)
+            HStack{
+                HStack{
+                    Image(systemName: "mappin.and.ellipse")
+                    Text("Gotham, NY")
+                        
+                }
+                HStack{
+                    Image(systemName: "link")
+                    Text("linkedin.com.tr/muhammetvural")
+                    
+                        
+                    
+                }
+            }
+            .font(.caption)
+            .foregroundColor(.gray)
+            
+            HStack{
+                HStack{
+                    Text("15")
+                        .bold()
+                    Text("Following")
+                        .foregroundColor(.gray)
+                        
+                        
+                }
+                HStack{
+                    Text("5.2M")
+                        .bold()
+                    Text("Followers")
+                        .foregroundColor(.gray)
+                        
+                        
+                    
+                }
+            }
+            .font(.subheadline)
+            .padding(.vertical)
+            
+            
+            
+            
+            
+        }.padding(.horizontal)
     }
 }
