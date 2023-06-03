@@ -21,6 +21,7 @@
 		B0518E2E2A2A1BA20007EFFA /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0518E2D2A2A1BA20007EFFA /* NotificationsView.swift */; };
 		B0518E302A2A1BB60007EFFA /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0518E2F2A2A1BB60007EFFA /* MessagesView.swift */; };
 		B0518E342A2A1F470007EFFA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0518E332A2A1F470007EFFA /* ProfileView.swift */; };
+		B0518E372A2BA8260007EFFA /* TweetFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0518E362A2BA8260007EFFA /* TweetFilterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		B0518E2D2A2A1BA20007EFFA /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		B0518E2F2A2A1BB60007EFFA /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		B0518E332A2A1F470007EFFA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B0518E362A2BA8260007EFFA /* TweetFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetFilterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +266,7 @@
 		B0518E312A2A1DBC0007EFFA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B0518E362A2BA8260007EFFA /* TweetFilterViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				B0518E342A2A1F470007EFFA /* ProfileView.swift in Sources */,
 				B04057E62A2A064D0097F801 /* ContentView.swift in Sources */,
 				B0518E232A2A0A1C0007EFFA /* TweetRowView.swift in Sources */,
+				B0518E372A2BA8260007EFFA /* TweetFilterViewModel.swift in Sources */,
 				B0518E202A2A08F30007EFFA /* FeedView.swift in Sources */,
 				B04057E42A2A064D0097F801 /* SocialMediaCloneApp.swift in Sources */,
 				B0518E2C2A2A1B6D0007EFFA /* ExploreView.swift in Sources */,
