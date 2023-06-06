@@ -8,34 +8,25 @@
 import SwiftUI
 
 struct FeedView: View {
-    @State private var showMenu = false
+    @State private var showNewTweetView = false
     var body: some View {
-        ScrollView{
-            LazyVStack{
-                ForEach(0 ... 20, id: \.self){ _ in
-                    TweetRowView()
-                        .padding()
-                }
-            }
-            .navigationTitle("Home")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar{
-                ToolbarItem(placement: .navigationBarLeading){
-                    Button{
-                        withAnimation{
-                            showMenu.toggle()
-                        }
-                    } label: {
-                        Circle()
-                            .frame(width: 32, height: 32)
+        ZStack(alignment: .bottomTrailing){
+            ScrollView{
+                LazyVStack{
+                    ForEach(0 ... 20, id: \.self){ _ in
+                        TweetRowView()
+                            .padding()
                     }
                 }
+                
+                
             }
+            
             Button{
-                print("Show new tweet view..")
+                showNewTweetView.toggle()
                 
             } label: {
-                Image(systemName: "book")
+                Image(systemName: "pencil")
                     .resizable()
                     .renderingMode(.template)
                     .frame(width: 28,height: 28)
@@ -45,7 +36,12 @@ struct FeedView: View {
             .foregroundColor(.white)
             .clipShape(Circle())
             .padding()
+            .fullScreenCover( isPresented: $showNewTweetView){
+                Text("New Tweet view..")
+            }
+            
         }
+        
         
         
     }
