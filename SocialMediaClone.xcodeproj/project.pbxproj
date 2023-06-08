@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B003679E2A31C90F00FCB2DC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B003679D2A31C90F00FCB2DC /* LoginView.swift */; };
+		B00367A12A31C92A00FCB2DC /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00367A02A31C92A00FCB2DC /* RegistrationView.swift */; };
 		B04057E42A2A064D0097F801 /* SocialMediaCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04057E32A2A064D0097F801 /* SocialMediaCloneApp.swift */; };
 		B04057E62A2A064D0097F801 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04057E52A2A064D0097F801 /* ContentView.swift */; };
 		B04057E82A2A064E0097F801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B04057E72A2A064E0097F801 /* Assets.xcassets */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B003679D2A31C90F00FCB2DC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B00367A02A31C92A00FCB2DC /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		B04057E02A2A064D0097F801 /* SocialMediaClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMediaClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04057E32A2A064D0097F801 /* SocialMediaCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaCloneApp.swift; sourceTree = "<group>"; };
 		B04057E52A2A064D0097F801 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +105,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B003679A2A31C7EA00FCB2DC /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				B003679B2A31C7FB00FCB2DC /* ViewModels */,
+				B003679C2A31C80600FCB2DC /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		B003679B2A31C7FB00FCB2DC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B003679C2A31C80600FCB2DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B003679D2A31C90F00FCB2DC /* LoginView.swift */,
+				B00367A02A31C92A00FCB2DC /* RegistrationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B04057D72A2A064D0097F801 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +193,7 @@
 		B0518E172A2A08050007EFFA /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B003679A2A31C7EA00FCB2DC /* Authentication */,
 				B0DB7DBF2A2F696900C892F1 /* UploadTweet */,
 				B0518E1B2A2A083A0007EFFA /* Components */,
 				B0518E3D2A2CBD680007EFFA /* SideMenu */,
@@ -514,6 +544,8 @@
 				B0518E2C2A2A1B6D0007EFFA /* ExploreView.swift in Sources */,
 				B0DB7DC52A2F6BC500C892F1 /* TextArea.swift in Sources */,
 				B0518E452A2CBE200007EFFA /* SideMenuViewModel.swift in Sources */,
+				B003679E2A31C90F00FCB2DC /* LoginView.swift in Sources */,
+				B00367A12A31C92A00FCB2DC /* RegistrationView.swift in Sources */,
 				B0DB7DC32A2F69B000C892F1 /* NewTweetView.swift in Sources */,
 				B0518E3C2A2C86060007EFFA /* UserRowView.swift in Sources */,
 				B0518E262A2A15E90007EFFA /* MainTabView.swift in Sources */,
